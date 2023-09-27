@@ -39,9 +39,6 @@ Add a catchy title to your project. Something that people immediately know what 
 - What is problematic?
 - What do you want to do with it?
 
-The dataset used is sourced from Kaggle: ["Credit Card Transactions Fraud Detection Dataset"](https://www.kaggle.com/datasets/kartik2112/fraud-detection)
-This is a simulated credit card transaction dataset containing legitimate and fraud transactions. It contains credit card transaction details of Customers owning Credit Cards by various Merchants. 
-
 # Used Tools
 - Explain which tools do you use and why
 - How do they work (don't go too deep into details, but add links)
