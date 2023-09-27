@@ -38,6 +38,7 @@ Add a catchy title to your project. Something that people immediately know what 
 - What do you like about it?
 - What is problematic?
 - What do you want to do with it?
+  ["Credit Card Transactions Fraud Detection Dataset"](https://www.kaggle.com/datasets/kartik2112/fraud-detection)
 
 # Used Tools
 - Explain which tools do you use and why
