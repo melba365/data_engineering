@@ -48,7 +48,7 @@ This is a simulated credit card transaction dataset containing legitimate and fr
 - Why did you choose them
 - How did you set them up
 
-   ![image](https://github.com/melba365/data_engineering/assets/26708646/81b97bb6-096d-4657-bc8c-0baf888e2064)
+![image](https://github.com/melba365/data_engineering/assets/26708646/81b97bb6-096d-4657-bc8c-0baf888e2064)
 
 ## Connect
 ## Buffer
