@@ -51,6 +51,7 @@ Setup:
   On Local machine:
     - Data Source python code
     - Postman
+    
   Docker:
     - FASTApi code image
     - Kafka
@@ -82,7 +83,8 @@ Apache Spark was used as the processing framework. Spark Structured Streaming wa
 - Go through your development and add your source code
 
 ## Stream Processing
-![image](https://github.com/melba365/data_engineering/assets/26708646/bc218825-dd9b-4ef2-bfbf-4e465f249723)
+![image](https://github.com/melba365/data_engineering/assets/26708646/b8b2fde6-8694-4cd8-8ed6-6f6f51fcc8e5)
+
 
 ### Storing Data Stream
 ### Processing Data Stream
