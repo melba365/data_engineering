@@ -33,11 +33,6 @@ Add a catchy title to your project. Something that people immediately know what 
 
 
 # The Data Set
-- Explain the data set
-- Why did you choose it?
-- What do you like about it?
-- What is problematic?
-- What do you want to do with it?
 
 The dataset used is sourced from Kaggle: ["Credit Card Transactions Fraud Detection Dataset"](https://www.kaggle.com/datasets/kartik2112/fraud-detection)
 This is a simulated credit card transaction dataset containing legitimate and fraud transactions. It contains credit card transaction details of Customers owning Credit Cards by various Merchants. 
@@ -60,10 +55,6 @@ Setup:
     - Kafka
     - Spark
 
-- Explain which tools do you use and why
-- How do they work (don't go too deep into details, but add links)
-- Why did you choose them
-- How did you set them up
 
 ## Data Preparation
 The credit card transactions .csv data has been transformed into json format, using a python code, so the json can be POST as a request to an API.
