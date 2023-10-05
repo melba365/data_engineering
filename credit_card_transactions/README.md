@@ -66,7 +66,7 @@ In this scenario, a data pipeline has been built to pull data from the API and f
 Postman was used to simulate a POST request to this API. This data was further produced via Kafka on a message topic.
 
 ## Processing
-Apache Spark was used as the processing framework. Spark Structured Streaming was leveraged to read the incoming stream and further process it to be stored.
+Apache Spark was used as the processing framework. Spark Structured Streaming was leveraged to read the incoming stream as a dataframe and further process it to be stored.
 
 Notes for optimisation:
   spark.streaming.kafka.maxRatePerPartition -  Set to control rate at which data is ingested from Kafka (max number of msgs)
