@@ -48,11 +48,14 @@ Having worked in the banking domain, this was a dataset i could leverage domain 
 ![image](https://github.com/melba365/data_engineering/assets/26708646/db482d15-9272-437e-8232-d6c8e7a788f9)
 
 Setup:
+
   On Local machine:
+    
     - Data Source python code
     - Postman
     
   Docker:
+   
     - FASTApi code image
     - Kafka
     - Spark
