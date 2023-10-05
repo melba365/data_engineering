@@ -41,19 +41,39 @@ Add a catchy title to your project. Something that people immediately know what 
 
 The dataset used is sourced from Kaggle: ["Credit Card Transactions Fraud Detection Dataset"](https://www.kaggle.com/datasets/kartik2112/fraud-detection)
 This is a simulated credit card transaction dataset containing legitimate and fraud transactions. It contains credit card transaction details of Customers owning Credit Cards by various Merchants. 
+Having worked in the banking domain, this was a dataset i could leverage domain experience and further build upon. The original dataset sourced from Kaggle has card transaction details merged alongwith detailed customer information in a single file, which was a bit problematic for me. So within my code I've split the dataset into 2 -> in a manner that one would expect credit card transactions data to stream through from a bank's credit card system: purely the transaction information. While we expect customer information to most likely flow in through the bank's customer repository or CRM system.
 
 # Used Tools
+
+![image](https://github.com/melba365/data_engineering/assets/26708646/db482d15-9272-437e-8232-d6c8e7a788f9)
+
+Setup:
+  On Local machine:
+    - Data Source python code
+    - Postman
+  Docker:
+    - FASTApi code image
+    - Kafka
+    - Spark
+
 - Explain which tools do you use and why
 - How do they work (don't go too deep into details, but add links)
 - Why did you choose them
 - How did you set them up
 
-![image](https://github.com/melba365/data_engineering/assets/26708646/bc218825-dd9b-4ef2-bfbf-4e465f249723)
+## Data Preparation
+The credit card transactions .csv data has been transformed into json format, using a python code, so the json can be POST as a request to an API.
 
+## Sourcing Data
+In this scenario, a data pipeline has been built to pull data from the API and further buffer it through Kafka. A python code has been written to leverage FASTApi for the purposes of hosting the API using Uvicorn. 
+In the scenario of stream processing, a data pipeline will pull the data from an API and send data to the buffer. AWS API Gateway POST method is used to pull data from the client. Every time when the data will reach to the API endpoint, it will trigger the lambda function and send data to AWS Kinesis.
 
-## Connect
 ## Buffer
+Postman was used to simulate a POST request to this API. This data was further produced via Kafka on a message topic.
+
 ## Processing
+Apache Spark was used as the processing framework. Spark Structured Streaming was leveraged to read the incoming stream and further process it to be stored.
+
 ## Storage
 ## Visualization
 
@@ -62,6 +82,8 @@ This is a simulated credit card transaction dataset containing legitimate and fr
 - Go through your development and add your source code
 
 ## Stream Processing
+![image](https://github.com/melba365/data_engineering/assets/26708646/bc218825-dd9b-4ef2-bfbf-4e465f249723)
+
 ### Storing Data Stream
 ### Processing Data Stream
 ## Batch Processing
