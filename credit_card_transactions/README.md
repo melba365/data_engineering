@@ -61,7 +61,6 @@ The credit card transactions .csv data has been transformed into json format, us
 
 ## Sourcing Data
 In this scenario, a data pipeline has been built to pull data from the API and further buffer it through Kafka. A python code has been written to leverage FASTApi for the purposes of hosting the API using Uvicorn. 
-In the scenario of stream processing, a data pipeline will pull the data from an API and send data to the buffer. AWS API Gateway POST method is used to pull data from the client. Every time when the data will reach to the API endpoint, it will trigger the lambda function and send data to AWS Kinesis.
 
 ## Buffer
 Postman was used to simulate a POST request to this API. This data was further produced via Kafka on a message topic.
